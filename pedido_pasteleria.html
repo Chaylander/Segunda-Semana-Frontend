@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Hacer pedido de pastel</title>
+</head>
+<body>
+    <h1>Aqui se hace el pedido</h1>
+    <form action="pedido.js">
+        <label for="nombre">Nombre</label><br>
+        <input type="text"  id="nombre" name="nombre"><br>
+
+        <label for="correo1">E-mail</label><br>
+        <input type="email" id="correo1" name="correo1"><br>
+        
+        <label for="tel1">Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br>
+
+        <br>
+
+        <p>Elige los pasteles que quieres y su tamaño?</p>
+        <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
+        <label for="chocolate">Chocolate</label>
+        <input type="number" name="chocolatecuantos" id="chocolatecuantos" placeholder="Cuantos?">
+        <select name="Tamañocho" id="tamañoCho">
+            <option value="individual">Individual</option>
+            <option value="mini">Mini</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <br>
+
+        <input type="checkbox" name="strawberry" id="strawberry" value="strawberry">
+        <label for="strawberry">Strawberry</label>
+        <input type="number" name="strawberrycuantos" id="strawberrycuantos" placeholder="Cuantos?">
+        <select name="TamañoStb" id="tamañostb">
+            <option value="individual">Individual</option>
+            <option value="mini">Mini</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <br>
+
+
+        <p>Desea combinar sabores en su pastel, seleccione 2 opciones(solo pasteles grandes)?</p>
+        <input type="radio" name="combinarsino" id="si" value="si">
+        <label for="si">Si</label><br>   
+        <input type="radio" name="combinarsino" id="no" value="no">
+        <label for="no">No</label><br>
+
+        <p>En caso de querer combinar sabores, elija(solo se mostraran los pasteles que el cliente eligio)</p>
+
+        <select name="pastelCombinar" id="pastelCombinar">
+            <option value="chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="3leches">3 leches</option>
+            <option value="chocolatetower">3 leches</option>
+        </select>
+
+        <p>Combinar con otro sabor</p>
+        <input type="checkbox" name="chocolateCombinar" id="chocolateCombinar" value="chocolateCombinar">
+        <label for="chocolateCombinar">Chocolate</label>
+        <input type="checkbox" name="StbCombinar" id="StbCombinar" value="stbCombinar">
+        <label for="stbCombinar">Strawberry</label>
+        <input type="checkbox" name="3lechesCombinar" id="3lechesCombinar" value="3lechesCombinar">
+        <label for="3lechesCombinar">3 leches</label>
+
+        <br>
+
+        <input type="checkbox" name="towerCombinar" id="towerCombinar" value="towerCombinar">
+        <label for="towerCombinar">Chocolate tower</label>
+        <input type="checkbox" name="pinCombinar" id="pinCombinar" value="pinCombinar">
+        <label for="pinCombinar">Pingüino</label>
+        <input type="checkbox" name="3lechesCombinar" id="3lechesCombinar" value="3lechesCombinar">
+        <label for="3lechesCombinar">3 leches</label>
+        
+        <br>
+
+        <p>Elegir hasta 2 adornos</p>
+        <input type="checkbox" name="mensaje" id="mensaje" value="mensaje">
+        <label for="mensaje">Mensaje</label><br>
+        <input type="checkbox" name="cremapastelera" id="cremapastelera" value="cremapastelera">
+        <label for="cremapastelera">Crema pastelera</label><br>
+        <input type="checkbox" name="bombon" id="bombon" value="bombon">
+        <label for="bombon">Bombon</label><br>
+
+        <p>Comentarios adicionales</p>
+        <textarea name="textarea" rows="10" cols="50" placeholder="Escriba informacion adicional sobre su pastel, los sabores o los adornos"></textarea>
+
+        <br><br>
+
+        <input type="submit">
+
+        <br>
+
+        </form>
+
+</body>
